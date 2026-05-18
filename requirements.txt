@@ -1,0 +1,35 @@
+# requirements.txt - AI Trader Pro 依赖
+
+# Web框架
+Flask==2.3.3
+Flask-CORS==4.0.0
+Flask-Session==0.5.0
+
+# 数据处理
+pandas==2.0.3
+numpy==1.24.3
+openpyxl>=3.10.0
+
+# 市场数据提供者
+yfinance==0.2.31
+ccxt==4.0.36
+requests==2.31.0
+httpx>=0.24.0
+
+# 本地LLM
+llama-cpp-python==0.2.15
+
+# 异步支持
+aiohttp>=3.8.0
+websockets>=11.0
+
+# 配置
+pyyaml>=6.0
+python-dotenv==1.0.0
+
+# 可视化
+matplotlib==3.7.2
+plotly==5.16.1
+
+# 其他
+Pillow==10.0.0

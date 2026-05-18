@@ -1,0 +1,37 @@
+2026-03-23 18:49:04,913 - __main__ - INFO - ✓ iTick provider initialized
+2026-03-23 18:49:04,913 - yfinance_provider - INFO - YFinance provider initialized
+2026-03-23 18:49:04,913 - __main__ - INFO - ✓ Yahoo Finance provider initialized
+2026-03-23 18:49:06,630 - __main__ - INFO - ✓ CCXT Binance provider initialized
+2026-03-23 18:49:06,768 - __main__ - INFO - ✓ CoinMarketCap provider initialized
+2026-03-23 18:49:07,019 - __main__ - INFO - ✓ Massive API provider initialized
+2026-03-23 18:49:07,023 - __main__ - INFO - ==================================================
+2026-03-23 18:49:07,024 - __main__ - INFO - 投资AI系统启动
+2026-03-23 18:49:07,024 - __main__ - INFO - ==================================================
+2026-03-23 18:49:07,024 - __main__ - INFO - 本地LLM: dmind-trading-merged
+2026-03-23 18:49:07,024 - __main__ - INFO - 数据提供者: ['itick', 'yfinance', 'ccxt_binance', 'cmc', 'massive']
+2026-03-23 18:49:07,024 - __main__ - INFO - 时间: 2026-03-23 18:49:07.024204
+2026-03-23 18:49:07,024 - __main__ - INFO - ==================================================
+2026-03-23 18:49:07,040 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9000
+ * Running on http://192.168.1.139:9000
+2026-03-23 18:49:07,040 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-23 18:49:27,751 - __main__ - WARNING - Failed to render template: index.html
+2026-03-23 18:49:27,751 - __main__ - WARNING - Failed to render template: index.html
+2026-03-23 18:49:27,754 - werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 18:49:27] "GET / HTTP/1.1" 200 -
+2026-03-23 18:49:27,754 - werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 18:49:27] "GET / HTTP/1.1" 200 -
+2026-03-23 18:50:04,905 - __main__ - WARNING - Failed to render template: index.html
+2026-03-23 18:50:04,907 - werkzeug - INFO - 127.0.0.1 - - [23/Mar/2026 18:50:04] "GET / HTTP/1.1" 200 -
+2026-03-28 21:17:47,492 - __main__ - INFO - ✓ iTick provider initialized
+2026-03-28 21:17:47,492 - yfinance_provider - INFO - YFinance provider initialized
+2026-03-28 21:17:47,492 - __main__ - INFO - ✓ Yahoo Finance provider initialized
+2026-03-28 21:17:49,136 - __main__ - INFO - ✓ CCXT Binance provider initialized
+2026-03-28 21:17:49,281 - __main__ - INFO - ✓ CoinMarketCap provider initialized
+2026-03-28 21:17:49,527 - __main__ - INFO - ✓ Massive API provider initialized
+2026-03-28 21:17:49,530 - __main__ - INFO - ==================================================
+2026-03-28 21:17:49,530 - __main__ - INFO - 投资AI系统启动
+2026-03-28 21:17:49,530 - __main__ - INFO - ==================================================
+2026-03-28 21:17:49,530 - __main__ - INFO - 本地LLM: dmind-trading-merged
+2026-03-28 21:17:49,530 - __main__ - INFO - 数据提供者: ['itick', 'yfinance', 'ccxt_binance', 'cmc', 'massive']
+2026-03-28 21:17:49,530 - __main__ - INFO - 时间: 2026-03-28 21:17:49.530231
+2026-03-28 21:17:49,530 - __main__ - INFO - ==================================================

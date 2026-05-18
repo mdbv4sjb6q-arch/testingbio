@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  investment-ai:
+    build: .
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./logs:/app/logs
+      - /Users/tonychan/Documents/trae_projects/AI/core/dmind-trading-merged:/models:ro
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+      - MODEL_PATH=/models/dmind-trading-q4_k_m.gguf
+    restart: unless-stopped
+    networks:
+      - investment-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  investment-network:
+    driver: bridge

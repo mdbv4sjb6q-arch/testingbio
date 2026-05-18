@@ -1,0 +1,541 @@
+2026-03-07 18:42:40,263 - __main__ - INFO - ✓ iTick provider initialized
+2026-03-07 18:42:40,263 - yfinance_provider - INFO - YFinance provider initialized
+2026-03-07 18:42:40,263 - __main__ - INFO - ✓ Yahoo Finance provider initialized
+2026-03-07 18:42:41,926 - __main__ - INFO - ✓ CCXT Binance provider initialized
+2026-03-07 18:42:42,056 - __main__ - INFO - ✓ CoinMarketCap provider initialized
+2026-03-07 18:42:42,353 - __main__ - INFO - ✓ Massive API provider initialized
+2026-03-07 18:42:42,354 - __main__ - INFO - ==================================================
+2026-03-07 18:42:42,354 - __main__ - INFO - 投资AI系统启动
+2026-03-07 18:42:42,354 - __main__ - INFO - ==================================================
+2026-03-07 18:42:42,354 - __main__ - INFO - 本地LLM: dmind-3-mini
+2026-03-07 18:42:42,354 - __main__ - INFO - 数据提供者: ['itick', 'yfinance', 'ccxt_binance', 'cmc', 'massive']
+2026-03-07 18:42:42,354 - __main__ - INFO - 时间: 2026-03-07 18:42:42.354862
+2026-03-07 18:42:42,354 - __main__ - INFO - ==================================================
+ * Serving Flask app 'app'
+ * Debug mode: off
+2026-03-07 18:42:42,376 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9000
+ * Running on http://192.168.1.229:9000
+2026-03-07 18:42:42,376 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-07 18:42:52,070 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:42:52] "GET / HTTP/1.1" 200 -
+2026-03-07 18:42:57,040 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:42:57,040 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:42:57] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:42:59,449 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:42:59,450 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:42:59] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:43:05,481 - __main__ - INFO - Trying itick for AAPL
+2026-03-07 18:43:05,481 - itick_provider - INFO - iTick request: https://api.itick.org/stock/kline params={'code': 'AAPL', 'kType': 8, 'limit': 100, 'region': 'US'}
+2026-03-07 18:43:05,811 - itick_provider - INFO - iTick got 100 candles for AAPL
+2026-03-07 18:43:05,812 - __main__ - INFO - ✓ Got 100 candles from itick
+2026-03-07 18:43:05,819 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:43:05] "POST /api/pro/signals HTTP/1.1" 200 -
+2026-03-07 18:43:26,982 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:43:26,983 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:43:26] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:43:56,987 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:43:56,993 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:43:56] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:44:26,982 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:44:26,983 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:44:26] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:44:29,849 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:44:29] "GET /svip HTTP/1.1" 200 -
+2026-03-07 18:44:30,308 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:44:30,308 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:44:30] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:44:34,866 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:44:34,867 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:44:34] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:44:45,680 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:44:45] "GET /svip HTTP/1.1" 200 -
+2026-03-07 18:44:45,739 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:44:45,739 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:44:45] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:44:57,121 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:44:57] "GET /svip HTTP/1.1" 200 -
+2026-03-07 18:44:57,206 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:44:57,206 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:44:57] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:45:01,811 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:45:01] "GET / HTTP/1.1" 200 -
+2026-03-07 18:45:01,878 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:45:01] "[33mGET /api/health HTTP/1.1[0m" 404 -
+2026-03-07 18:45:03,844 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:45:03] "GET / HTTP/1.1" 200 -
+2026-03-07 18:45:03,907 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:45:03] "[33mGET /api/health HTTP/1.1[0m" 404 -
+2026-03-07 18:45:06,371 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:45:06] "[33mGET /api/health HTTP/1.1[0m" 404 -
+2026-03-07 18:46:34,162 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:46:34] "GET / HTTP/1.1" 200 -
+2026-03-07 18:46:34,259 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:46:34] "[33mGET /api/health HTTP/1.1[0m" 404 -
+2026-03-07 18:46:38,555 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:46:38] "GET /svip HTTP/1.1" 200 -
+2026-03-07 18:46:38,628 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:46:38,628 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:46:38] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:46:40,236 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:46:40,237 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:46:40] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:46:40,873 - __main__ - INFO - ✅ 鲸鱼数据加载成功: 📉 偏做空趋势 (65.6%)
+2026-03-07 18:46:40,874 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:46:40] "GET /api/svip/whale_data HTTP/1.1" 200 -
+2026-03-07 18:46:48,991 - __main__ - INFO - CMC search found 10 results for 'btc'
+2026-03-07 18:46:48,991 - __main__ - INFO - Massive search found 0 results for 'btc'
+2026-03-07 18:46:49,424 - __main__ - INFO - Search for 'btc' returned 12 results
+2026-03-07 18:46:49,424 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:46:49] "GET /api/search?q=btc HTTP/1.1" 200 -
+2026-03-07 18:46:49,628 - __main__ - INFO - CMC search found 0 results for 'BTC/USDT'
+2026-03-07 18:46:49,629 - __main__ - INFO - Massive search found 0 results for 'BTC/USDT'
+2026-03-07 18:46:49,906 - yfinance - ERROR - HTTP Error 500: <!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Yahoo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style>
+      html {
+          height: 100%;
+      }
+      body {
+          background: #fafafc url(https://s.yimg.com/nn/img/sad-panda-201402200631.png) 50% 50%;
+          background-size: cover;
+          height: 100%;
+          text-align: center;
+          font: 300 18px "helvetica neue", helvetica, verdana, tahoma, arial, sans-serif;
+          margin: 0;
+      }
+      table {
+          height: 100%;
+          width: 100%;
+          table-layout: fixed;
+          border-collapse: collapse;
+          border-spacing: 0;
+          border: none;
+      }
+      h1 {
+          font-size: 42px;
+          font-weight: 400;
+          color: #400090;
+      }
+      p {
+          color: #1A1A1A;
+      }
+      #message-1 {
+          font-weight: bold;
+          margin: 0;
+      }
+      #message-2 {
+          display: inline-block;
+          *display: inline;
+          zoom: 1;
+          max-width: 17em;
+          _width: 17em;
+      }
+      </style>
+      <script>
+      
+      </script>
+  </head>
+  <body>
+  <!-- status code : 500 -->
+  <!-- Unknown Host -->
+  <!-- host machine: ats-ncache-api--production-ir2-7f7df69d77-9pt25 -->
+  <!-- timestamp: 1772909209.852 -->
+  <!-- url: https://default.finance-yql-production.finance-k8s.omega.yahoo.com/v10/finance/quoteSummary/BTC/USDT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=BTC%2FUSDT&crumb=gqFl1Oha9U9-->
+  <script type="text/javascript">
+    function buildUrl(url, parameters){
+      var qs = [];
+      for(var key in parameters) {
+        var value = parameters[key];
+        qs.push(encodeURIComponent(key) + "=" + encodeURIComponent(value));
+      }
+      url = url + "?" + qs.join('&');
+      return url;
+    }
+
+    function generateBRBMarkup(site) {
+      params.source = 'brb';
+      generateBeaconMarkup(params);
+      var englishHeader = 'Will be right back...';
+      var englishMessage1 = 'Thank you for your patience.';
+      var englishMessage2 = 'Our engineers are working quickly to resolve the issue.';
+      var defaultLogoStyle = '';
+      var siteDataMap = {
+        'default': {
+          logo: 'https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_205x58_frontpage.png',
+          logoAlt: 'Yahoo Logo',
+          logoStyle: defaultLogoStyle,
+          header: englishHeader,
+          message1: englishMessage1,
+          message2: englishMessage2
+        }
+      };
+
+      var siteDetails = siteDataMap['default'];
+
+      document.write('<table><tbody><tr><td>');
+      document.write('<div id="content">');
+      document.write('<img src="' + siteDetails['logo'] + '" alt="' + siteDetails['logoAlt'] + '" style="' + siteDetails['logoStyle'] + '">');
+      document.write('<h1 style="margin-top:20px;">' + siteDetails['header'] + '</h1>');
+      document.write('<p id="message-1">' + siteDetails['message1'] + '</p>');
+      document.write('<p id="message-2">' + siteDetails['message2'] + '</p>');
+      document.write('</div>');
+      document.write('</td></tr></tbody></table>');
+    }
+
+    function generateBeaconMarkup(params) {
+        document.write('<img src="' + buildUrl('//geo.yahoo.com/b', params) + '" style="display:none;" width="0px" height="0px"/>');
+        var beacon = new Image();
+        beacon.src = buildUrl('//bcn.fp.yahoo.com/p', params);
+    }
+
+    var hostname = window.location.hostname;
+    var device = 'desktop';
+    var ynet = ('-' === '1');
+    var time = new Date().getTime();
+    var params = {
+        s: '1197757129',
+        t: time,
+        err_url: document.URL,
+        err: '500',
+        test: '-',
+        ats_host: 'ats-ncache-api--production-ir2-7f7df69d77-9pt25',
+        rid: '-',
+        message: 'Unknown Host'
+    };
+
+    if(ynet) {
+        document.write('<div style="height: 5px; background-color: red;"></div>');
+    }
+    generateBRBMarkup(hostname, params);
+
+  </script>
+  <noscript>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div id="englishContent">
+            <h1 style="margin-top:20px;">Will be right back...</h1>
+            <p id="message-1">Thank you for your patience.</p>
+            <p id="message-2">Our engineers are working quickly to resolve the issue.</p>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </noscript>
+  </body>
+</html>
+
+2026-03-07 18:46:50,457 - yfinance_provider - WARNING - Search failed for BTC/USDT: Failed to parse json response from Yahoo Finance: {'code': 'Not Found', 'description': 'HTTP 404 Not Found'}
+2026-03-07 18:46:50,458 - __main__ - INFO - Search for 'BTC/USDT' returned 6 results
+2026-03-07 18:46:50,459 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:46:50] "GET /api/search?q=BTC/USDT HTTP/1.1" 200 -
+2026-03-07 18:46:51,306 - __main__ - INFO - Fetching data for BTC/USDT
+2026-03-07 18:46:51,306 - __main__ - INFO - Trying itick for BTC/USDT
+2026-03-07 18:46:51,306 - itick_provider - INFO - iTick request: https://api.itick.org/crypto/kline params={'code': 'BTCUSDT', 'kType': 8, 'limit': 100}
+2026-03-07 18:46:51,541 - itick_provider - WARNING - iTick API error: The 'region' parameter is missing.
+2026-03-07 18:46:51,543 - __main__ - INFO - Trying yfinance for BTC/USDT
+2026-03-07 18:46:52,025 - yfinance - ERROR - Failed to get ticker 'BTC/USDT' reason: Expecting value: line 1 column 1 (char 0)
+2026-03-07 18:46:52,300 - yfinance - ERROR - HTTP Error 500: <!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Yahoo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style>
+      html {
+          height: 100%;
+      }
+      body {
+          background: #fafafc url(https://s.yimg.com/nn/img/sad-panda-201402200631.png) 50% 50%;
+          background-size: cover;
+          height: 100%;
+          text-align: center;
+          font: 300 18px "helvetica neue", helvetica, verdana, tahoma, arial, sans-serif;
+          margin: 0;
+      }
+      table {
+          height: 100%;
+          width: 100%;
+          table-layout: fixed;
+          border-collapse: collapse;
+          border-spacing: 0;
+          border: none;
+      }
+      h1 {
+          font-size: 42px;
+          font-weight: 400;
+          color: #400090;
+      }
+      p {
+          color: #1A1A1A;
+      }
+      #message-1 {
+          font-weight: bold;
+          margin: 0;
+      }
+      #message-2 {
+          display: inline-block;
+          *display: inline;
+          zoom: 1;
+          max-width: 17em;
+          _width: 17em;
+      }
+      </style>
+      <script>
+      
+      </script>
+  </head>
+  <body>
+  <!-- status code : 500 -->
+  <!-- Unknown Host -->
+  <!-- host machine: ats-ncache-api--production-ir2-7f7df69d77-9pt25 -->
+  <!-- timestamp: 1772909212.256 -->
+  <!-- url: https://default.finance-yql-production.finance-k8s.omega.yahoo.com/v10/finance/quoteSummary/BTC/USDT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=BTC%2FUSDT&crumb=gqFl1Oha9U9-->
+  <script type="text/javascript">
+    function buildUrl(url, parameters){
+      var qs = [];
+      for(var key in parameters) {
+        var value = parameters[key];
+        qs.push(encodeURIComponent(key) + "=" + encodeURIComponent(value));
+      }
+      url = url + "?" + qs.join('&');
+      return url;
+    }
+
+    function generateBRBMarkup(site) {
+      params.source = 'brb';
+      generateBeaconMarkup(params);
+      var englishHeader = 'Will be right back...';
+      var englishMessage1 = 'Thank you for your patience.';
+      var englishMessage2 = 'Our engineers are working quickly to resolve the issue.';
+      var defaultLogoStyle = '';
+      var siteDataMap = {
+        'default': {
+          logo: 'https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_205x58_frontpage.png',
+          logoAlt: 'Yahoo Logo',
+          logoStyle: defaultLogoStyle,
+          header: englishHeader,
+          message1: englishMessage1,
+          message2: englishMessage2
+        }
+      };
+
+      var siteDetails = siteDataMap['default'];
+
+      document.write('<table><tbody><tr><td>');
+      document.write('<div id="content">');
+      document.write('<img src="' + siteDetails['logo'] + '" alt="' + siteDetails['logoAlt'] + '" style="' + siteDetails['logoStyle'] + '">');
+      document.write('<h1 style="margin-top:20px;">' + siteDetails['header'] + '</h1>');
+      document.write('<p id="message-1">' + siteDetails['message1'] + '</p>');
+      document.write('<p id="message-2">' + siteDetails['message2'] + '</p>');
+      document.write('</div>');
+      document.write('</td></tr></tbody></table>');
+    }
+
+    function generateBeaconMarkup(params) {
+        document.write('<img src="' + buildUrl('//geo.yahoo.com/b', params) + '" style="display:none;" width="0px" height="0px"/>');
+        var beacon = new Image();
+        beacon.src = buildUrl('//bcn.fp.yahoo.com/p', params);
+    }
+
+    var hostname = window.location.hostname;
+    var device = 'desktop';
+    var ynet = ('-' === '1');
+    var time = new Date().getTime();
+    var params = {
+        s: '1197757129',
+        t: time,
+        err_url: document.URL,
+        err: '500',
+        test: '-',
+        ats_host: 'ats-ncache-api--production-ir2-7f7df69d77-9pt25',
+        rid: '-',
+        message: 'Unknown Host'
+    };
+
+    if(ynet) {
+        document.write('<div style="height: 5px; background-color: red;"></div>');
+    }
+    generateBRBMarkup(hostname, params);
+
+  </script>
+  <noscript>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div id="englishContent">
+            <h1 style="margin-top:20px;">Will be right back...</h1>
+            <p id="message-1">Thank you for your patience.</p>
+            <p id="message-2">Our engineers are working quickly to resolve the issue.</p>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </noscript>
+  </body>
+</html>
+
+2026-03-07 18:46:52,338 - yfinance_provider - ERROR - Failed to get OHLCV for BTC/USDT: Failed to parse json response from Yahoo Finance: {'code': 'Not Found', 'description': 'HTTP 404 Not Found'}
+2026-03-07 18:46:52,339 - __main__ - INFO - Trying ccxt_binance for BTC/USDT
+2026-03-07 18:46:52,605 - __main__ - INFO - ✓ Got 100 candles from ccxt_binance
+/Users/tonychan/Documents/trae_projects/AI/technical_indicators.py:307: RuntimeWarning: divide by zero encountered in divide
+  var2 = self.sma(
+2026-03-07 18:46:52,621 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:46:52] "GET /api/market_data?symbol=BTC/USDT&timeframe=1d&days=100 HTTP/1.1" 200 -
+2026-03-07 18:46:52,679 - __main__ - INFO - Analyzing BTC/USDT
+2026-03-07 18:46:52,679 - __main__ - INFO - Trying itick for BTC/USDT
+2026-03-07 18:46:52,679 - itick_provider - INFO - iTick request: https://api.itick.org/crypto/kline params={'code': 'BTCUSDT', 'kType': 8, 'limit': 100}
+2026-03-07 18:46:52,914 - itick_provider - WARNING - iTick API error: The 'region' parameter is missing.
+2026-03-07 18:46:52,915 - __main__ - INFO - Trying yfinance for BTC/USDT
+2026-03-07 18:46:52,917 - yfinance - ERROR - Failed to get ticker 'BTC/USDT' reason: Expecting value: line 1 column 1 (char 0)
+2026-03-07 18:46:53,184 - yfinance - ERROR - HTTP Error 500: <!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Yahoo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style>
+      html {
+          height: 100%;
+      }
+      body {
+          background: #fafafc url(https://s.yimg.com/nn/img/sad-panda-201402200631.png) 50% 50%;
+          background-size: cover;
+          height: 100%;
+          text-align: center;
+          font: 300 18px "helvetica neue", helvetica, verdana, tahoma, arial, sans-serif;
+          margin: 0;
+      }
+      table {
+          height: 100%;
+          width: 100%;
+          table-layout: fixed;
+          border-collapse: collapse;
+          border-spacing: 0;
+          border: none;
+      }
+      h1 {
+          font-size: 42px;
+          font-weight: 400;
+          color: #400090;
+      }
+      p {
+          color: #1A1A1A;
+      }
+      #message-1 {
+          font-weight: bold;
+          margin: 0;
+      }
+      #message-2 {
+          display: inline-block;
+          *display: inline;
+          zoom: 1;
+          max-width: 17em;
+          _width: 17em;
+      }
+      </style>
+      <script>
+      
+      </script>
+  </head>
+  <body>
+  <!-- status code : 500 -->
+  <!-- Unknown Host -->
+  <!-- host machine: ats-ncache-api--production-ir2-7f7df69d77-9pt25 -->
+  <!-- timestamp: 1772909213.140 -->
+  <!-- url: https://default.finance-yql-production.finance-k8s.omega.yahoo.com/v10/finance/quoteSummary/BTC/USDT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=BTC%2FUSDT&crumb=gqFl1Oha9U9-->
+  <script type="text/javascript">
+    function buildUrl(url, parameters){
+      var qs = [];
+      for(var key in parameters) {
+        var value = parameters[key];
+        qs.push(encodeURIComponent(key) + "=" + encodeURIComponent(value));
+      }
+      url = url + "?" + qs.join('&');
+      return url;
+    }
+
+    function generateBRBMarkup(site) {
+      params.source = 'brb';
+      generateBeaconMarkup(params);
+      var englishHeader = 'Will be right back...';
+      var englishMessage1 = 'Thank you for your patience.';
+      var englishMessage2 = 'Our engineers are working quickly to resolve the issue.';
+      var defaultLogoStyle = '';
+      var siteDataMap = {
+        'default': {
+          logo: 'https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_205x58_frontpage.png',
+          logoAlt: 'Yahoo Logo',
+          logoStyle: defaultLogoStyle,
+          header: englishHeader,
+          message1: englishMessage1,
+          message2: englishMessage2
+        }
+      };
+
+      var siteDetails = siteDataMap['default'];
+
+      document.write('<table><tbody><tr><td>');
+      document.write('<div id="content">');
+      document.write('<img src="' + siteDetails['logo'] + '" alt="' + siteDetails['logoAlt'] + '" style="' + siteDetails['logoStyle'] + '">');
+      document.write('<h1 style="margin-top:20px;">' + siteDetails['header'] + '</h1>');
+      document.write('<p id="message-1">' + siteDetails['message1'] + '</p>');
+      document.write('<p id="message-2">' + siteDetails['message2'] + '</p>');
+      document.write('</div>');
+      document.write('</td></tr></tbody></table>');
+    }
+
+    function generateBeaconMarkup(params) {
+        document.write('<img src="' + buildUrl('//geo.yahoo.com/b', params) + '" style="display:none;" width="0px" height="0px"/>');
+        var beacon = new Image();
+        beacon.src = buildUrl('//bcn.fp.yahoo.com/p', params);
+    }
+
+    var hostname = window.location.hostname;
+    var device = 'desktop';
+    var ynet = ('-' === '1');
+    var time = new Date().getTime();
+    var params = {
+        s: '1197757129',
+        t: time,
+        err_url: document.URL,
+        err: '500',
+        test: '-',
+        ats_host: 'ats-ncache-api--production-ir2-7f7df69d77-9pt25',
+        rid: '-',
+        message: 'Unknown Host'
+    };
+
+    if(ynet) {
+        document.write('<div style="height: 5px; background-color: red;"></div>');
+    }
+    generateBRBMarkup(hostname, params);
+
+  </script>
+  <noscript>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div id="englishContent">
+            <h1 style="margin-top:20px;">Will be right back...</h1>
+            <p id="message-1">Thank you for your patience.</p>
+            <p id="message-2">Our engineers are working quickly to resolve the issue.</p>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </noscript>
+  </body>
+</html>
+
+2026-03-07 18:46:53,228 - yfinance_provider - ERROR - Failed to get OHLCV for BTC/USDT: Failed to parse json response from Yahoo Finance: {'code': 'Not Found', 'description': 'HTTP 404 Not Found'}
+2026-03-07 18:46:53,229 - __main__ - INFO - Trying ccxt_binance for BTC/USDT
+2026-03-07 18:46:53,458 - __main__ - INFO - ✓ Got 100 candles from ccxt_binance
+2026-03-07 18:46:53,473 - __main__ - INFO - Analysis result: SELL, Score: 0.6333333333333333
+2026-03-07 18:46:53,474 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:46:53] "POST /api/analysis HTTP/1.1" 200 -
+2026-03-07 18:47:05,576 - __main__ - INFO - User 2320e174-ea5b-4acf-ac1c-2e69b56735f0 asks about BTC/USDT: 现在怎么操作
+2026-03-07 18:47:05,576 - __main__ - INFO - User 2320e174-ea5b-4acf-ac1c-2e69b56735f0 asks: 现在怎么操作
+2026-03-07 18:47:05,576 - __main__ - INFO - Trying itick for BTC/USDT
+2026-03-07 18:47:05,576 - itick_provider - INFO - iTick request: https://api.itick.org/crypto/kline params={'code': 'BTCUSDT', 'kType': 8, 'limit': 100}
+2026-03-07 18:47:05,936 - itick_provider - WARNING - iTick API error: The 'region' parameter is missing.
+2026-03-07 18:47:05,938 - __main__ - INFO - Trying yfinance for BTC/USDT
+2026-03-07 18:47:05,939 - yfinance - ERROR - Failed to get ticker 'BTC/USDT' reason: Expecting value: line 1 column 1 (char 0)
+2026-03-07 18:47:05,940 - yfinance - ERROR - $BTC/USDT: possibly delisted; no timezone found
+2026-03-07 18:47:05,940 - yfinance_provider - WARNING - No data for BTC/USDT
+2026-03-07 18:47:05,940 - __main__ - INFO - Trying ccxt_binance for BTC/USDT
+2026-03-07 18:47:06,238 - __main__ - INFO - ✓ Got 100 candles from ccxt_binance
+2026-03-07 18:47:06,249 - llama_wrapper - ERROR - llama-cpp-python not installed
+2026-03-07 18:47:06,249 - llama_wrapper - INFO - Install with: pip install llama-cpp-python
+2026-03-07 18:47:06,249 - llama_wrapper - WARNING - Using command-line backend
+2026-03-07 18:47:16,524 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:47:16] "[33mGET /api/health HTTP/1.1[0m" 404 -
+2026-03-07 18:47:41,106 - werkzeug - INFO - 127.0.0.1 - - [07/Mar/2026 18:47:41] "[33mGET /api/health HTTP/1.1[0m" 404 -
